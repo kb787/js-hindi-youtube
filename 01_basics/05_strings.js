@@ -9,7 +9,7 @@ const gameName = new String('hitesh-hc-com')
 
 // console.log(gameName[0]);
 // console.log(gameName.__proto__);
-
+// The __proto__ is depreciated from current versions of js
 
 // console.log(gameName.length);
 // console.log(gameName.toUpperCase());
@@ -25,6 +25,7 @@ console.log(anotherString);
 const newStringOne = "   hitesh    "
 console.log(newStringOne);
 console.log(newStringOne.trim());
+// The method trim() removes all whitespaces from string
 
 const url = "https://hitesh.com/hitesh%20choudhary"
 
@@ -33,3 +34,4 @@ console.log(url.replace('%20', '-'))
 console.log(url.includes('sundar'))
 
 console.log(gameName.split('-'));
+// The method split() introduces space in string whereever it observes the value "-"
