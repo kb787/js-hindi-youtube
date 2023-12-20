@@ -17,7 +17,7 @@ const user = {
 
 // function chai(){
 //     let username = "hitesh"
-//     console.log(this.username);
+//     console.log(this.username); This can take objects but not variables and returns undefined if applied for variables
 // }
 
 // chai()
