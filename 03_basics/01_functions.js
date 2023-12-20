@@ -54,6 +54,28 @@ function handleObject(anyobject){
     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
 
+// Using function between arrays and objects 
+/*
+const shoppingCardItems = {
+      itemName:"Beet" ,
+      itemPrice:50 
+}
+
+const shoppingPriceArray = [100,200,300,400,500]
+
+function add(item1,item2) {
+     return item1.itemPrice + item2[3]
+}
+console.log(add(shoppingCardItems,shoppingPriceArray)) ;*/
+//By using the ... or spread operator multiple parameters can be passed by single item name
+/*
+const adding = function(...item){
+       return item
+}
+
+console.log(adding(100,200,300,400))
+
+*/
 // handleObject(user)
 handleObject({
     username: "sam",
