@@ -1,0 +1,22 @@
+var combinationSum = function(candidates, target) {
+    const outputArray = [];
+
+    const backtrack = (start, currentCombination, remainingTarget) => {
+        if (remainingTarget === 0) {
+            outputArray.push([...currentCombination]);
+            return;
+        }
+
+        for (let i = start; i < candidates.length; i++) {
+            if (candidates[i] <= remainingTarget) {
+                currentCombination.push(candidates[i]);
+                backtrack(i, currentCombination, remainingTarget - candidates[i]);
+                currentCombination.pop();
+            }
+        }
+    };
+
+    backtrack(0, [], target);
+    return outputArray;
+};
+// Implementation of backtrack algo to find sum of elements = target 
