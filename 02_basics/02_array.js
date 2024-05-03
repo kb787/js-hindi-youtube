@@ -15,15 +15,15 @@ const dc_heros = ["superman", "flash", "batman"]
 
 const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]  
 
-const real_another_array = another_array.flat(Infinity) // Breaks the array internal creation and infinity specifies infinite amount of rounds working
+const real_another_array = another_array.flat(Infinity) // Merges the subarray created inside main array and transform into a single array 
 console.log(real_another_array); 
 
 console.log(Array.isArray("Hitesh"))
-console.log(Array.from("Hitesh"))  // Seperares the combined string form and creates an individual array element form (H,i,t,e,s,h)
-console.log(Array.from({name: "hitesh"})) // interesting
+console.log(Array.from("Hitesh"))  // Seperates the combined string form and creates an individual array element form (H,i,t,e,s,h)
+console.log(Array.from({name: "hitesh"})) // Returns a blank array because the object specified is not iterable 
 
 let score1 = 100
 let score2 = 200
-let score3 = 300
+let score3 = 300 
 
 console.log(Array.of(score1, score2, score3)); // Groups the three variables to merge into a single array
