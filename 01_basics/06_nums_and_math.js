@@ -1,18 +1,17 @@
 const score = 400
-// console.log(score);
+console.log(score); 
 
 const balance = new Number(100)
-// console.log(balance);
+console.log(balance); // Prints the value specifying object of [Number: ]
 
-// console.log(balance.toString().length);
-// console.log(balance.toFixed(1));
+console.log(balance.toString().length);
+console.log(balance.toFixed(1)); // Displays the value till one decimal point
 
 const otherNumber = 123.8966
-
-// console.log(otherNumber.toPrecision(4));
+console.log(otherNumber.toPrecision(4));   // Displays the value after rounding off to 4 integers
 
 const hundreds = 1000000
-// console.log(hundreds.toLocaleString('en-IN'));
+console.log(hundreds.toLocaleString('en-IN'));
 
 // +++++++++++++ Maths +++++++++++++++++++++++++++++
 
