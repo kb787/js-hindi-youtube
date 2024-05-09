@@ -31,15 +31,16 @@
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
-    // document.getElementById('images').addEventListener('click', function(e){
-    //     console.log("clicked inside the ul");
-    // }, false)
+     document.getElementById('images').addEventListener('click', function(e){
+         console.log("clicked inside the ul");
+     }, false)
 
-    // document.getElementById('owl').addEventListener('click', function(e){
+     document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
-    //     e.stopPropagation()
-    // }, false)
-    
+    //     e.stopPropagation() // stops bubbling at lower hierarchy which is owl
+    // }, false)  // images wraps owl when false is specified it goes by bubbling from lower hierarchy (owl) to higher hierarchy images
+           // For true it goes from images to owl 
+     
     // document.getElementById('google').addEventListener('click',function(e){
     //     e.preventDefault();
     //     e.stopPropagation()
@@ -51,7 +52,7 @@
         console.log(e.target.tagName);
         if (e.target.tagName === 'IMG') {
             console.log(e.target.id);
-            let removeIt = e.target.parentNode
+            let removeIt = e.target.parentNode // is used to target an element by grabbing its id and apply click events
             removeIt.remove()
         }
     
