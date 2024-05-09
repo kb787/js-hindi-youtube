@@ -33,7 +33,7 @@ const myCoding = [
     },
 ]
 
-myCoding.forEach( (item) => {
+myCoding.forEach( (item) => {            // Can be used for traversing array of objects
     
     console.log(item.languageName);
 } )
