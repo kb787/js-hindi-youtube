@@ -8,7 +8,7 @@ let index = 0
 let myArray = ['flash', "batman", "superman"]
 
 let arr = 0
-while (arr < myArray.length) {
+while (arr < myArray.length) {                      // Performs condition check for every iteration before executing inner statements
     //console.log(`Value is ${myArray[arr]}`);
     arr = arr + 1
 }
@@ -16,6 +16,6 @@ while (arr < myArray.length) {
 let score = 11
 
 do {
-    console.log(`Score is ${score}`);
+    console.log(`Score is ${score}`);            // Directly executes for the very first iteration then goes for condition checks 
     score++
 } while (score <= 10);
